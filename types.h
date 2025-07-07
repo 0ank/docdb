@@ -6,10 +6,15 @@ typedef long DocInt;
 typedef double DocBFloat;
 typedef size_t DocDFloat;
 
+typedef char DocNull;
+
+#define DOC_NULL(v) (v) == 0
+
 typedef char DocBoolean;
-#define DOC_TRUE 1
-#define DOC_FALSE -1
-#define DOC_UNKNOWN 0
+
+#define DOC_TRUE(v) (v) > 0
+#define DOC_FALSE(v) (v) < 0
+#define DOC_UNKNOWN(v) (v) == 0
 
 typedef struct
 {
