@@ -3,6 +3,7 @@
 
 #include "arena.h"
 #include "types.h"
+#include "prim.h"
 
 
 

@@ -1,6 +1,9 @@
 #ifndef DOCDB_PRIM_H
 #define DOCDB_PRIM_H
 
+#include "types.h"
+#include "arena.h"
+
 DocNat docdb_imread_nat(StringView* buf)
 {
     DocNat nat = *(DocNat*)(buf->str);
